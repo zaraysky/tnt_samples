@@ -4,6 +4,7 @@
 
 ## Как запустить tarantool
 ### Виртуальная машина
+Проще всего воспользоваться Vagrant (https://www.vagrantup.com/downloads.html)
 
 Создайте файл с именем ```Vagrant```
 ```
@@ -18,6 +19,11 @@ end
 Если у вас Parallels, то ее можно запустить командой из каталога с файлом `Vagrant` 
 ```bash
 vagrant up --provider=parallels
+```
+
+Если же у вас VirtualBox, то:  
+```bash
+vagrant up --provider=virtualbox
 ```
 
 Подключиться к VM:
@@ -57,7 +63,24 @@ sudo apt-get -y update
 sudo apt-get -y install tarantool
 ```
 
-Всё, tarantool установлен
+Всё, tarantool установлен.
+
+## Примеры
+Нужно склонировать этот репозиторий 
+
+```
+git clone https://github.com/zaraysky/tnt_samples.git
+cd tnt_samples/
+```
+
+И проверить, что tarantool работает:
+```
+tarantool init.lua
+```
+
+### 
+
+[Простое нагрузочное тестирование](perftest.md) 
 
 
 
