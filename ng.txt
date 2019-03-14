@@ -1,0 +1,314 @@
+    1  apt-get update
+    2  apt-get -y install sudo
+    3  apt-get -y install gnupg2
+    4  apt-get -y install curl
+    5  curl http://download.tarantool.org/tarantool/1.10/gpgkey | sudo apt-key add -
+    6  apt-get -y install lsb-release
+    7  release=`lsb_release -c -s`
+    8  apt-get -y install apt-transport-https
+    9  rm -f /etc/apt/sources.list.d/*tarantool*.list
+   10  echo "deb http://download.tarantool.org/tarantool/1.10/ubuntu/ ${release} main" | tee /etc/apt/sources.list.d/tarantool_1_10.list
+   11  echo "deb-src http://download.tarantool.org/tarantool/1.10/ubuntu/ ${release} main" | tee -a /etc/apt/sources.list.d/tarantool_1_10.list
+   12  sudo apt-get -y update
+   13  sudo apt-get -y install tarantool
+   14  tarantool
+   15  pwd
+   16  git clone https://github.com/zaraysky/tnt_samples.git
+   17  cd tnt_samples/
+   18  tarantool init.lua 
+   19  nginx
+   20  учше
+   21  exit
+   22  cd tnt_samples/
+   23  l
+   24  git pull
+   25  cd
+   26  apt install nginx
+   27  apt install -q nginx
+   28  apt install
+   29  apt install -h
+   30  apt -h
+   31  apt --help
+   32  apt install nginx
+   33  cd tnt_samples/
+   34  ps
+   35  ps -h
+   36  lsof
+   37  lsof | grep nginx
+   38  nginx
+   39  cd perftest
+   40  nginx
+   41  vim nginx.conf 
+   42  nginx -h
+   43  nginx -c nginx.conf 
+   44  nginx -c ./nginx.conf 
+   45  nginx -c ~/tnt_samples/perftest/nginx.conf 
+   46  vim nginx.conf 
+   47  exit
+   48  cd tnt_samples/perftest
+   49  l
+   50  vim nginx.conf 
+   51  nginx -c $(PWD)/nginx.conf
+   52  nginx -c $PWD/nginx.conf
+   53  vim nginx.conf 
+   54  touch mime.types
+   55  nginx -c $PWD/nginx.conf
+   56  sudo nginx -c $PWD/nginx.conf
+   57  l /etc/nginx/
+   58  cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+   59  cp nginx.conf /etc/nginx/nginx.conf
+   60  nginx
+   61  vim nginx.conf 
+   62  cd ..
+   63  pwd
+   64  git clone https://github.com/tarantool/nginx_upstream_module.git nginx_upstream_module
+   65  cd nginx_upstream_module
+   66  git submodule update --init --recursive
+   67  git clone https://github.com/nginx/nginx.git nginx
+   68  # Ubuntu
+   69  apt-get install libpcre++0 gcc unzip libpcre3-dev zlib1g-dev libssl-dev libxslt-dev
+   70  make build-all
+   71  pwd
+   72  ls
+   73  apt install pcre-devel
+   74  apt-cache search pcre
+   75* apt-get install libpcre3 libpcre3-devcd
+   76  make build-all
+   77  cd
+   78  cd tnt_samples/perftest
+   79  nginx
+   80  cd -
+   81  cd nginx_upstream_module/
+   82  l
+   83  make build-all
+   84  cd -
+   85  cd tnt_samples/perftest
+   86  cd ~/nginx_upstream_module/
+   87  ./configure --add-module=REPO_ROOT && make
+   88  ж
+   89  ;
+   90  '
+l
+
+   91  l
+   92  install libpcre++0 gcc unzip libpcre3-dev zlib1g-dev libssl-dev libxslt-dev
+   93  apt install libpcre++0 gcc unzip libpcre3-dev zlib1g-dev libssl-dev libxslt-dev
+   94  apt-get install libpcre++0 gcc unzip libpcre3-dev zlib1g-dev libssl-dev libxslt-dev
+   95  git submodule update --init --recursive
+   96  git clone https://github.com/nginx/nginx.git nginx
+   97  apt-get install libpcre++0 gcc unzip libpcre3-dev zlib1g-dev libssl-dev libxslt-dev
+   98  apt-get install libpcre++0v5 gcc unzip libpcre3-dev zlib1g-dev libssl-dev libxslt-dev
+   99  make build-all
+  100  apt-get install libpcre++0v5
+  101  apt-get install gcc
+  102  apt-get install unzip
+  103  apt-get install libpcre3-dev
+  104  cat Makefile 
+  105  make build-all-dynamic
+  106  cat Makefile cd ~/tnt_samples/perftest
+  107  cat Makefile cd ~/tnt_samples/
+  108  cd ~/tnt_samples/perftest
+  109  l
+  110  cd
+  111  nginx
+  112  cd nginx_upstream_module/
+  113  make build
+  114  l
+  115  apt-get install libpcre++0 
+  116  apt-get install libpcre++0v5
+  117  make build-all
+  118  ls
+  119  vim Makefile 
+  120  cd nginx
+  121  ll
+  122  ls objs
+  123  ll objs
+  124  ./nginx
+  125  ll
+  126  cd objs
+  127  ll
+  128  ./nginx
+  129  ./nginx -V
+  130  cd ..
+  131  ll
+  132  cd objs
+  133  ls
+  134  ll
+  135  cd ../..
+  136  ls
+  137  ll
+  138  vim Makefile 
+  139  ll
+  140  nginx -V
+  141  ll
+  142  cd nginx
+  143  ll
+  144  cd objs
+  145  ll
+  146  ./nginx -V
+  147  cd ../..
+  148  ll
+  149  cd -
+  150  ll
+  151  vim autoconf.err 
+  152  ll
+  153  vim Makefile 
+  154  св
+  155  cd
+  156  addgroup -S nginx     && adduser -S -G nginx nginx     && apk add --no-cache 'su-exec>=0.2'
+  157  addgroup -S nginx
+  158  addgroup -S nginxnginx_upstream_module
+  159  nginx_upstream_module
+  160  д
+  161  l
+  162  cd tnt_samples/perftest
+  163  l
+  164  cd ..
+  165  l
+  166  cd ..
+  167  l
+  168  cd nginx_upstream_module/
+  169  make build_all
+  170  make build-all
+  171  l
+  172  cat Makefile 
+  173  make install
+  174  make __install
+  175  nginx -V
+  176* cd 
+  177  cat Makefile 
+  178  /usr/local/nginx/sbin/nginx -V
+  179  which nginx
+  180  alias nginx=/usr/local/nginx/sbin/nginx
+  181  cd
+  182  which nginx
+  183  /usr/local/nginx/sbin/nginx -V
+  184  nginx -V
+  185  cd tnt_samples/perftest
+  186  l
+  187  nginx -h
+  188  nginx -c ~/tnt_samples/perftest/nginx.conf 
+  189  /usr/local/nginx/sbin/nginx -c ~/tnt_samples/perftest/nginx.conf 
+  190  cd
+  191  wget https://nginx.org/download/nginx-1.15.0.tar.gz && tar zxvf nginx-1.15.0.tar.gz
+  192  l
+  193  wget https://ftp.pcre.org/pub/pcre/pcre-8.42.tar.gz && tar xzvf pcre-8.42.tar.gz
+  194  wget https://www.zlib.net/zlib-1.2.11.tar.gz && tar xzvf zlib-1.2.11.tar.gz
+  195  wget https://www.openssl.org/source/openssl-1.1.0h.tar.gz && tar xzvf openssl-1.1.0h.tar.gz
+  196  rm -rf *.tar.gz
+  197  cd ~/nginx-1.15.0
+  198  cd 
+  199  find -name "ngx_http_lua_module.so" /
+  200  find / -name "ngx_http_lua_module.so" 
+  201  pwd
+  202  git clone https://github.com/openresty/lua-nginx-module.git
+  203  l
+  204  cd lua-nginx-module/
+  205  ls -lA
+  206  ll
+  207  nginx -V
+  208  cd ../nginx_upstream_module/
+  209  cd ../nginx-1.15.0/
+  210  l
+  211  ./configure --with-cc-opt='-I/root/nginx_upstream_module/third_party -I/root/nginx_upstream_module/third_party/yajl/build/yajl-2.1.0/include -I/root/nginx_upstream_module/third_party/msgpuck -I/root/nginx_upstream_module/src' --add-module=/root/nginx_upstream_module --prefix=/usr/local/nginx
+  212  ./configure --with-cc-opt='-I/root/nginx_upstream_module/third_party -I/root/nginx_upstream_module/third_party/yajl/build/yajl-2.1.0/include -I/root/nginx_upstream_module/third_party/msgpuck -I/root/nginx_upstream_module/src' --add-module=/root/nginx_upstream_module --prefix=/usr/local/nginx/usr/local/nginx
+  213  /usr/local/nginx -V
+  214  ./configure --with-cc-opt='-I/root/nginx_upstream_module/third_party -I/root/nginx_upstream_module/third_party/yajl/build/yajl-2.1.0/include -I/root/nginx_upstream_module/third_party/msgpuck -I/root/nginx_upstream_module/src' --add-module=/root/nginx_upstream_module --prefix=/usr/local/nginx
+  215  /usr/local/nginx
+  216  /usr/local/nginx/sbin/nginx -V
+  217  ./configure --with-cc-opt='-I/root/nginx_upstream_module/third_party -I/root/nginx_upstream_module/third_party/yajl/build/yajl-2.1.0/include -I/root/nginx_upstream_module/third_party/msgpuck -I/root/nginx_upstream_module/src' --add-module=/root/nginx_upstream_module --prefix=/usr/local/nginx --add-module=/root/lua-nginx-module/
+  218  cd
+  219  git clone https://github.com/openresty/luajit2.git
+  220  ll
+  221  cd luajit2/
+  222  l
+  223  make
+  224  ll
+  225  cd src/
+  226  l
+  227  cd ..
+  228  make install
+  229  cd ../nginx-1.15.0/
+  230  ./configure --with-cc-opt='-I/root/nginx_upstream_module/third_party -I/root/nginx_upstream_module/third_party/yajl/build/yajl-2.1.0/include -I/root/nginx_upstream_module/third_party/msgpuck -I/root/nginx_upstream_module/src' --add-module=/root/nginx_upstream_module --prefix=/usr/local/nginx --add-module=/root/lua-nginx-module/ --with-ld-opt="-Wl,-rpath,/usr/local/lib"
+  231  cd /usr/local/lib/
+  232  l
+  233  ls lua
+  234  ls lua/5.1/
+  235  export LUAJIT_LIB=/usr/local/lib
+  236  export LUAJIT_INC=/usr/local/include/luajit-2.1
+  237  cd -
+  238  ./configure --with-cc-opt='-I/root/nginx_upstream_module/third_party -I/root/nginx_upstream_module/third_party/yajl/build/yajl-2.1.0/include -I/root/nginx_upstream_module/third_party/msgpuck -I/root/nginx_upstream_module/src' --add-module=/root/nginx_upstream_module --prefix=/usr/local/nginx --add-module=/root/lua-nginx-module/ --with-ld-opt="-Wl,-rpath,/usr/local/lib"
+  239  make
+  240  make install
+  241  /usr/local/s
+  242  /usr/local/nginx/sbin/nginx -V
+  243  cd ../tnt_samples/perftest
+  244  /usr/local/nginx/sbin/nginx -c ~/tnt_samples/perftest/nginx.conf 
+  245  nginx -V
+  246  which nginx
+  247  /usr/sbin/nginx -V
+  248  cd -
+  249  ./configure --with-cc-opt='-g -O2 -fdebug-prefix-map=/build/nginx-FIJPpj/nginx-1.14.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Wdate-time -D_FORTIFY_SOURCE=2' --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fPIC' --prefix=/usr/share/nginx --conf-path=/etc/nginx/nginx.conf --http-log-path=/var/log/nginx/access.log --error-log-path=/var/log/nginx/error.log --lock-path=/var/lock/nginx.lock --pid-path=/run/nginx.pid --modules-path=/usr/lib/nginx/modules --http-client-body-temp-path=/var/lib/nginx/body --http-fastcgi-temp-path=/var/lib/nginx/fastcgi --http-proxy-temp-path=/var/lib/nginx/proxy --http-scgi-temp-path=/var/lib/nginx/scgi --http-uwsgi-temp-path=/var/lib/nginx/uwsgi --with-debug --with-pcre-jit --with-http_ssl_module --with-http_stub_status_module --with-http_realip_module --with-http_auth_request_module --with-http_v2_module --with-http_dav_module --with-http_slice_module --with-threads --with-http_addition_module --with-http_geoip_module=dynamic --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module=dynamic --with-http_sub_module --with-http_xslt_module=dynamic --with-stream=dynamic --with-stream_ssl_module --with-mail=dynamic --with-mail_ssl_module --add-module=/root/nginx_upstream_module --add-module=/root/lua-nginx-module/
+  250  apt install gd gd-devel
+  251  apt-get searcg gd
+  252  apt-get search gd
+  253  apt-get 
+  254  apt-get install php5apt-get install php5-gd
+  255  apt-get install php5-gd
+  256  apt-get install libgd-dev
+  257  ./configure --with-cc-opt='-g -O2 -fdebug-prefix-map=/build/nginx-FIJPpj/nginx-1.14.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Wdate-time -D_FORTIFY_SOURCE=2' --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fPIC' --prefix=/usr/share/nginx --conf-path=/etc/nginx/nginx.conf --http-log-path=/var/log/nginx/access.log --error-log-path=/var/log/nginx/error.log --lock-path=/var/lock/nginx.lock --pid-path=/run/nginx.pid --modules-path=/usr/lib/nginx/modules --http-client-body-temp-path=/var/lib/nginx/body --http-fastcgi-temp-path=/var/lib/nginx/fastcgi --http-proxy-temp-path=/var/lib/nginx/proxy --http-scgi-temp-path=/var/lib/nginx/scgi --http-uwsgi-temp-path=/var/lib/nginx/uwsgi --with-debug --with-pcre-jit --with-http_ssl_module --with-http_stub_status_module --with-http_realip_module --with-http_auth_request_module --with-http_v2_module --with-http_dav_module --with-http_slice_module --with-threads --with-http_addition_module --with-http_geoip_module=dynamic --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module=dynamic --with-http_sub_module --with-http_xslt_module=dynamic --with-stream=dynamic --with-stream_ssl_module --with-mail=dynamic --with-mail_ssl_module --add-module=/root/nginx_upstream_module --add-module=/root/lua-nginx-module/
+  258  apt install geoip
+  259  apt install geoclue-ubuntu-geoip
+  260  ./configure --with-cc-opt='-g -O2 -fdebug-prefix-map=/build/nginx-FIJPpj/nginx-1.14.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Wdate-time -D_FORTIFY_SOURCE=2' --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fPIC' --prefix=/usr/share/nginx --conf-path=/etc/nginx/nginx.conf --http-log-path=/var/log/nginx/access.log --error-log-path=/var/log/nginx/error.log --lock-path=/var/lock/nginx.lock --pid-path=/run/nginx.pid --modules-path=/usr/lib/nginx/modules --http-client-body-temp-path=/var/lib/nginx/body --http-fastcgi-temp-path=/var/lib/nginx/fastcgi --http-proxy-temp-path=/var/lib/nginx/proxy --http-scgi-temp-path=/var/lib/nginx/scgi --http-uwsgi-temp-path=/var/lib/nginx/uwsgi --with-debug --with-pcre-jit --with-http_ssl_module --with-http_stub_status_module --with-http_realip_module --with-http_auth_request_module --with-http_v2_module --with-http_dav_module --with-http_slice_module --with-threads --with-http_addition_module --with-http_geoip_module=dynamic --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module=dynamic --with-http_sub_module --with-http_xslt_module=dynamic --with-stream=dynamic --with-stream_ssl_module --with-mail=dynamic --with-mail_ssl_module --add-module=/root/nginx_upstream_module --add-module=/root/lua-nginx-module/
+  261  apt uninstall geoclue-ubuntu-geoip
+  262  apt
+  263  apt remove geoclue-ubuntu-geoip
+  264  apt install libgeoip1
+  265  ./configure --with-cc-opt='-g -O2 -fdebug-prefix-map=/build/nginx-FIJPpj/nginx-1.14.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Wdate-time -D_FORTIFY_SOURCE=2' --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fPIC' --prefix=/usr/share/nginx --conf-path=/etc/nginx/nginx.conf --http-log-path=/var/log/nginx/access.log --error-log-path=/var/log/nginx/error.log --lock-path=/var/lock/nginx.lock --pid-path=/run/nginx.pid --modules-path=/usr/lib/nginx/modules --http-client-body-temp-path=/var/lib/nginx/body --http-fastcgi-temp-path=/var/lib/nginx/fastcgi --http-proxy-temp-path=/var/lib/nginx/proxy --http-scgi-temp-path=/var/lib/nginx/scgi --http-uwsgi-temp-path=/var/lib/nginx/uwsgi --with-debug --with-pcre-jit --with-http_ssl_module --with-http_stub_status_module --with-http_realip_module --with-http_auth_request_module --with-http_v2_module --with-http_dav_module --with-http_slice_module --with-threads --with-http_addition_module --with-http_geoip_module=dynamic --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module=dynamic --with-http_sub_module --with-http_xslt_module=dynamic --with-stream=dynamic --with-stream_ssl_module --with-mail=dynamic --with-mail_ssl_module --add-module=/root/nginx_upstream_module --add-module=/root/lua-nginx-module/
+  266  apt install  libgeoip-dev
+  267  ./configure --with-cc-opt='-g -O2 -fdebug-prefix-map=/build/nginx-FIJPpj/nginx-1.14.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Wdate-time -D_FORTIFY_SOURCE=2' --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fPIC' --prefix=/usr/share/nginx --conf-path=/etc/nginx/nginx.conf --http-log-path=/var/log/nginx/access.log --error-log-path=/var/log/nginx/error.log --lock-path=/var/lock/nginx.lock --pid-path=/run/nginx.pid --modules-path=/usr/lib/nginx/modules --http-client-body-temp-path=/var/lib/nginx/body --http-fastcgi-temp-path=/var/lib/nginx/fastcgi --http-proxy-temp-path=/var/lib/nginx/proxy --http-scgi-temp-path=/var/lib/nginx/scgi --http-uwsgi-temp-path=/var/lib/nginx/uwsgi --with-debug --with-pcre-jit --with-http_ssl_module --with-http_stub_status_module --with-http_realip_module --with-http_auth_request_module --with-http_v2_module --with-http_dav_module --with-http_slice_module --with-threads --with-http_addition_module --with-http_geoip_module=dynamic --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module=dynamic --with-http_sub_module --with-http_xslt_module=dynamic --with-stream=dynamic --with-stream_ssl_module --with-mail=dynamic --with-mail_ssl_module --add-module=/root/nginx_upstream_module --add-module=/root/lua-nginx-module/
+  268  cd -
+  269  make
+  270  make install
+  271  cd -
+  272  /usr/local/nginx/sbin/nginx -c ~/tnt_samples/perftest/nginx.conf
+  273  vim nginx.conf 
+  274  /usr/local/nginx/sbin/nginx -V
+  275  d -
+  276  cd -
+  277  make install
+  278  /usr/share/nginx/sbin/nginx -V
+  279  cd -
+  280  /usr/share/nginx/sbin/nginx -c ~/tnt_samples/perftest/nginx.conf
+  281  vim nginx.conf 
+  282  /usr/share/nginx/sbin/nginx -c ~/tnt_samples/perftest/nginx.conf
+  283  ps -ef | grep ngi
+  284  l
+  285  chmod -x server.lua 
+  286  l
+  287  ll
+  288  chmod +x server.lua 
+  289  ll
+  290  ./server.lua 
+  291  tarantollctl rocks install http
+  292  tarantoolctl rocks install http
+  293  ./server.lua 
+  294  vim ./server.lua 
+  295  tarantool --help
+  296  tarantool server.lua &
+  297  ./wrk.sh 
+  298  apt install wrk
+  299  apt-get install wrk
+  300  cd 
+  301  sudo apt-get install build-essential libssl-dev git -y
+  302  git clone https://github.com/wg/wrk.git wrk
+  303  cd wrk
+  304  make
+  305  # move the executable to somewhere in your PATH, ex:
+  306  sudo cp wrk /usr/local/bin
+  307  cd -
+  308  cd tnt_samples/perftest
+  309  ./wrk.sh 
+  310  history
+  311  cd 
+  312  history > ng.txt

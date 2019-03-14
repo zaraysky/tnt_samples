@@ -46,6 +46,7 @@ vagrant@ubuntu-18:~$ sudo -i
 apt-get update
 apt-get -y install sudo
 apt-get -y install gnupg2
+
 apt-get -y install curl
 
 curl http://download.tarantool.org/tarantool/1.10/gpgkey | sudo apt-key add -
@@ -68,13 +69,13 @@ sudo apt-get -y install tarantool
 ## Примеры
 Нужно склонировать этот репозиторий 
 
-```
+```bash
 git clone https://github.com/zaraysky/tnt_samples.git
 cd tnt_samples/
 ```
 
 И проверить, что tarantool работает:
-```
+```bash
 tarantool init.lua
 ```
 
